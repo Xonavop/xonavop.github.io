@@ -1,0 +1,95 @@
+<!Doctype html>
+<!--
+	Diego López
+	2 IC
+	Fecha de finalización:
+	13/11/2020
+-->
+<html>
+<html lang="es">
+
+<head>
+<title> Guau | Hotel Canino </title> 
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
+<meta charset="utf-8">
+
+<!-- Importo iconos-->
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+
+<body>
+    <div id="navbar">
+        <a href="#"><img src="images/logo.png"></a>
+        <div id="navbar-right">
+          <a class="active" href="#inicio">Inicio</a>
+          <a href="sobrenosotros.html">Sobre Nosotros</a>
+          <a href="instalaciones.html">Instalaciones</a>
+          <a href="habitaciones.html">Habitaciones</a>
+          <a href="contacto.html">Contactanos</a>
+        </div>
+      </div>
+    </div>  
+</div>  
+
+<div id="video-box">
+  <div class="video-overlay"></div>
+  <div class="video-contenido">
+      <div class="texto">
+        <h1>Bienvenido a Guau</h1>
+        <p>Un hotel diferente</p>
+        <p>Para tu mejor amigo canino</p>
+      </div>
+  </div>
+  <video autoplay="" loop="" muted>
+    <source src="images/loop.mp4" type="video/mp4" />
+  </video>
+</div>
+      <script>
+            // Cuando el usuario se desplacé 80px hacia abajo desde el inicio de la pagina, cambia el tamaño del nav.
+     window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+          document.getElementById("navbar").style.padding = "25px 8px";
+        } else {
+          document.getElementById("navbar").style.padding = "75px 8px";
+        }
+      }
+      </script>
+
+<footer class="footer">
+    <div class="footer-izquierdo col-md-4 col-sm-6">
+      <p class="about">
+        <span> Acerca de la empresa</span><b>GUAU</b> es una empresa especializada en el hospedaje y tratado de perros.
+        Contamos con todo tipo de comodidades, para tu mejor amigo.
+      </p>
+    </div>
+    <div class="footer-central col-md-4 col-sm-6">
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span> Atanasio Sierra & Calle 8</span> Maldonado, Uruguay</p>
+      </div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <p> (+598) 12345678</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:example@guau.com"> example@guau.com</a></p>
+      </div>
+    </div>
+    <div class="footer-derecho col-md-4 col-sm-6">
+      <img src="images/footer.png" width="250" height="110">
+      <p class="menufooter">
+        <a href="index.html"> Inicio</a> |
+        <a href="sobrenosotros.html"> Sobre Nosotros</a> |
+        <a href="instalaciones.html"> Instalaciones</a> |
+        <a href="habitaciones.html"> Habitaciones</a> |
+        <a href="contacto.html"> Contactanos</a> |
+      </p>
+      <p class="nombre"> Guau | Hotel Canino &copy; 2020</p>
+    </div>
+  </footer>
+</body>
+</html>
